@@ -1,0 +1,26 @@
+$font-size: 20px;
+
+.section-top {
+    display: flex;
+    justify-content: center;
+
+    input {
+        height: 50px;
+        width: 40vw;
+        font-size: $font-size;
+    };
+
+    button {
+        width: 10vw;
+        background-color: #334E68;
+        border: 0px;
+        color: #FFF;
+        font-size: $font-size;
+    } 
+
+    button:hover {
+        transform: scale(1.1);
+        border-radius: 10px;
+    }
+}
+

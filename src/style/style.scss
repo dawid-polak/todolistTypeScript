@@ -1,0 +1,9 @@
+@use 'variables';
+@use 'container';
+@use 'section-top';
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: variables.$background-color;
+}
