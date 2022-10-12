@@ -28,13 +28,48 @@
   display: flex;
   justify-content: center;
   margin: 30px 0px 30px 0px;
+  font-size: 22px;
+  color: #d9e2ec;
 }
-.section-categories .category {
-  display: flex;
-  font-size: 25px;
+.section-categories input {
+  display: none;
 }
-.section-categories .category label {
+.section-categories label {
   margin: 0px 5px 0px 5px;
+}
+.section-categories label:hover {
+  cursor: pointer;
+  transform: scale(1.02);
+}
+.section-categories input:checked + label {
+  color: #fff;
+}
+
+.section-bottom {
+  width: 45vw;
+  margin: 0px auto 0px auto;
+  color: white;
+  font-size: 20px;
+}
+.section-bottom ul {
+  list-style-type: none;
+  padding: 0px;
+}
+.section-bottom ul li {
+  margin: 10px 0px 10px 0px;
+  display: flex;
+  justify-content: space-between;
+}
+.section-bottom ul li .btn button {
+  background-color: #Ff0003;
+  border: 0;
+  color: #FFF;
+  padding: 5px 10px;
+  border-radius: 3px;
+}
+.section-bottom ul li .btn button:hover {
+  cursor: pointer;
+  transform: scale(1.02);
 }
 
 body {

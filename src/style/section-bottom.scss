@@ -1,0 +1,32 @@
+.section-bottom{
+    width: 45vw;
+    margin: 0px auto 0px auto;
+    color: white;
+    font-size: 20px;
+
+    ul {
+        list-style-type: none;
+        padding: 0px;
+        
+        li {
+            margin: 10px 0px 10px 0px;
+            display: flex;
+            justify-content: space-between;
+
+            .btn {
+                button { 
+                    background-color: #Ff0003;
+                    border: 0;
+                    color: #FFF;
+                    padding: 5px 10px;
+                    border-radius: 3px;
+                }
+
+                button:hover { 
+                   cursor: pointer;
+                   transform: scale(1.02);
+                }
+            }
+        }
+    }
+}

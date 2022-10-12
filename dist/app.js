@@ -10,9 +10,16 @@ const tasks = [
 const addTekstToTasks = (task) => {
     tasks.push(task);
 };
+const addCategoryToTask = (radioChecked) => {
+    if (radioChecked) {
+        return radioChecked;
+    }
+};
 mainBtn.addEventListener('click', () => {
+    const radioChecked = document.querySelector("input[name='category']:checked");
     addTekstToTasks({
         name: mainInput.value,
+        category: radioChecked ? addCategoryToTask(radioChecked.value) : "",
         done: false
     });
 });
