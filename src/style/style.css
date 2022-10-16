@@ -22,6 +22,7 @@
 .section-top button:hover {
   transform: scale(1.1);
   border-radius: 10px;
+  cursor: pointer;
 }
 
 .section-categories {
@@ -39,7 +40,7 @@
 }
 .section-categories label:hover {
   cursor: pointer;
-  transform: scale(1.02);
+  transform: scale(1.03);
 }
 .section-categories input:checked + label {
   color: #fff;
@@ -70,6 +71,14 @@
 .section-bottom ul li .btn button:hover {
   cursor: pointer;
   transform: scale(1.02);
+}
+
+.category-blue {
+  color: rgb(68, 68, 255);
+}
+
+.category-green {
+  color: rgb(42, 141, 42);
 }
 
 body {
