@@ -1,0 +1,25 @@
+.section--edit-categories {
+   text-align: center;
+   margin: 15px;
+    
+    #add-category {
+        background-color: #334E68;
+        color: #FFF;
+        padding: 6px;
+        border: 0px;
+        border-radius: 5px;
+    }
+
+    #delete-category {
+        background-color: #334E68;
+        color: red;
+        padding: 6px;
+        border: 0px;
+        border-radius: 5px;
+    }
+
+    button:hover {
+        cursor: pointer;
+        transform: scale(1.03);
+    }
+}

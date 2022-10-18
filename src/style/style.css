@@ -3,6 +3,12 @@
   width: 70vw;
 }
 
+.section-title {
+  text-align: center;
+  color: #FFF;
+  margin-bottom: 50px;
+}
+
 .section-top {
   display: flex;
   justify-content: center;
@@ -23,6 +29,29 @@
   transform: scale(1.1);
   border-radius: 10px;
   cursor: pointer;
+}
+
+.section--edit-categories {
+  text-align: center;
+  margin: 15px;
+}
+.section--edit-categories #add-category {
+  background-color: #334E68;
+  color: #FFF;
+  padding: 6px;
+  border: 0px;
+  border-radius: 5px;
+}
+.section--edit-categories #delete-category {
+  background-color: #334E68;
+  color: red;
+  padding: 6px;
+  border: 0px;
+  border-radius: 5px;
+}
+.section--edit-categories button:hover {
+  cursor: pointer;
+  transform: scale(1.03);
 }
 
 .section-categories {
