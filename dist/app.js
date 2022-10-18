@@ -1,6 +1,7 @@
 const mainInput = document.querySelector('#main-input');
 const mainBtn = document.querySelector('#main-btn');
 const listTask = document.querySelector('.tasks');
+;
 const tasks = [];
 const addTekstToTasks = (task) => {
     tasks.push(task);
@@ -52,3 +53,22 @@ const addColor = (task, spanText) => {
     }
     ;
 };
+// remove task after click delete in task
+listTask.addEventListener('click', (e) => {
+    const htmlElement = e.target;
+    if (htmlElement.tagName === "BUTTON") {
+        const task = htmlElement.closest('.task');
+        const textTask = task.querySelector('.text').innerHTML;
+        tasks.forEach((task, index) => {
+            if (task.name === textTask) {
+                tasks.splice(index, 1);
+            }
+            ;
+        });
+        task.remove();
+    }
+    else {
+        return;
+    }
+    ;
+});

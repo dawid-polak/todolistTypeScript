@@ -9,7 +9,7 @@ interface Task {
     name: string;
     category?: Categories;
     done: boolean;
-}
+};
 
 const tasks: Task[] = [];
 
@@ -73,4 +73,24 @@ mainBtn.addEventListener('click', () => {
     } if (task.category === 'work') {
         spanText.classList.add('category-green');
     };
- }
+ };
+
+// remove task after click delete in task
+ listTask.addEventListener('click', (e) => {
+    const htmlElement = e.target as HTMLElement;
+
+    if (htmlElement.tagName === "BUTTON") {
+        const task: HTMLLIElement = htmlElement.closest('.task');
+        const textTask: string = task.querySelector('.text').innerHTML;
+        
+        tasks.forEach((task: Task, index: number) => {
+
+            if(task.name === textTask) {
+                tasks.splice(index, 1);
+            };
+        });
+        task.remove();
+    } else {
+        return;
+    };
+ });
