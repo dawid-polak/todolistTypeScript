@@ -59,7 +59,6 @@
   justify-content: center;
   margin: 30px 0px 30px 0px;
   font-size: 22px;
-  color: #d9e2ec;
 }
 .section-categories input {
   display: none;
@@ -72,7 +71,7 @@
   transform: scale(1.03);
 }
 .section-categories input:checked + label {
-  color: #fff;
+  transform: scale(1.2);
 }
 
 .section-bottom {
@@ -108,6 +107,25 @@
 
 .category-green {
   color: rgb(42, 141, 42);
+}
+
+.modal--select-category {
+  position: absolute;
+  z-index: 1000;
+  width: 80vw;
+  height: 70vh;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #3c3c3c;
+  border-radius: 10px;
+  display: none;
+  flex-flow: column;
+  align-items: center;
+  justify-content: space-between;
+}
+.modal--select-category .close-modal {
+  align-items: right;
 }
 
 body {
